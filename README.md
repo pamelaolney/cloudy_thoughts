@@ -1,4 +1,4 @@
-<h1> # Cloudy Thoughts </h1>
+# Cloudy Thoughts
 A place for you to ask intriguing questions during thoughtful times
 
 User should be able to ...
