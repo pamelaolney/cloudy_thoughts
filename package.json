@@ -1,0 +1,26 @@
+{
+  "name": "cloudy_thoughts",
+  "version": "1.0.0",
+  "description": "A place for you to ask intriguing questions during thoughtful times",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pamelaolney/cloudy_thoughts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pamelaolney/cloudy_thoughts/issues"
+  },
+  "homepage": "https://github.com/pamelaolney/cloudy_thoughts#readme"
+}
