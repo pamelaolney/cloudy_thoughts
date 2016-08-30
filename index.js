@@ -7,7 +7,10 @@ var Comment = mongoose.model("Comment");
 
 var parser = require("body-parser");
 var app = express();
-
+app.use(parser.json({extended: true}));
+app.listen(4000, function(){
+  console.log("I am here on channel 4000 bae");
+});
 
 app.get("/", function(req, res){
   res.json("Hey Worlio");
@@ -19,14 +22,8 @@ app.get("/questions", function(req, res){
   });
 });
 
-
-
-
-
-
-
-
-
-app.listen(4000, function(){
-  console.log("I am here on channel 4000 bae");
-});
+app.get("/questions/:author", function(req, res){
+  Question.findOne({author: req.params.author}).then(function(question){
+    res.json(question);
+  })
+})

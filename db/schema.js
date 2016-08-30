@@ -20,6 +20,7 @@ var CommentSchema = new Schema({
 });
 
 var QuestionSchema = new Schema({
+  author: String,
   title: String,
   comments: [CommentSchema]
 });
