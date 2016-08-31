@@ -2,6 +2,7 @@
 
 <div ng-repeat="question in QuestionIndexViewModel.questions ">
   <a data-ui-sref="questionShow({author: question.author})">{{question.title}}</a>
+  <a data-ui-sref="questionEdit({author: question.author})">(edit)</a>
 </div>
 <br>
 <br>

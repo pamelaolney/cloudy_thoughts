@@ -25,6 +25,12 @@
         controller: "QuestionNewController",
         controllerAs: "QuestionNewViewModel"
       })
+      .state("questionEdit", {
+        url: "/questions/:author/edit",
+        templateUrl: "js/questions/edit.html",
+        controller: "QuestionEditController",
+        controllerAs: "QuestionEditViewModel"
+      })
       .state("questionShow", {
         url: "/questions/:author",
         templateUrl: "js/questions/show.html",
