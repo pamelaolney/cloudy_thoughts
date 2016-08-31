@@ -2,7 +2,7 @@
 
   (function(){
     angular
-    .module("question")
+    .module("cloudy")
     .controller("QuestionShowController", [
       "QuestionFactory",
       "$stateParams",
@@ -10,7 +10,6 @@
     ]);
 
     function QuestionShowControllerFunction(QuestionFactory, $stateParams){
-      var vm = this;
-      vm.question = QuestionFactory.get({id: $stateParams.id})
+      this.question= QuestionFactory.get({author: $stateParams.author});
     }
   }());
