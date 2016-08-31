@@ -1,1 +1,8 @@
 <h2>These are all the Questions</h2>
+
+<div ng-repeat="question in QuestionIndexViewModel.questions ">
+  <a data-ui-sref="questionShow({author: question.author})">{{question.title}}</a>
+</div>
+<br>
+<br>
+<a data-ui-sref="questionNew">(+) Add Question</a>

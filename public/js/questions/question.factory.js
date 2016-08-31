@@ -9,7 +9,9 @@
     ]);
 
     function QuestionFactoryFunction($resource){
-      return $resource("http://localhost:4000/questions")
+      return $resource("http://localhost:4000/questions", {}, {
+        update: { method: "PUT"}
+      });
     }
 
   }());
