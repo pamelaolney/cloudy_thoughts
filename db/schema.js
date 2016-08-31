@@ -29,9 +29,9 @@ var Question = mongoose.model("Question", QuestionSchema);
 var Comment = mongoose.model("Comment", CommentSchema);
 
 
-var sam = new Question({author: "sam"})
-var jan = new Question({author: "jan"})
-var pam = new Question({author: "pam"})
+var sam = new Question({author: "sam", title: "question1"})
+var jan = new Question({author: "jan", title: "question2"})
+var pam = new Question({author: "pam", title: "question3"})
 
 var comment1 = new Comment({author: "lady1", body: "comment1!!!"})
 var comment2 = new Comment({author: "lady2", body: "comment2!!!"})

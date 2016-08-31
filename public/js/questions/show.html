@@ -4,4 +4,6 @@
 <br>
 <br>
 <h3>Comments</h3>
-<p>{{QuestionShowViewModel.question.comments}}</p>
+<p ng-repeat="comment in QuestionShowViewModel.question.comments">
+  {{QuestionShowViewModel.question.comments.body}}
+</p>
