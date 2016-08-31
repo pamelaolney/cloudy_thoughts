@@ -32,7 +32,7 @@ app.get("/questions/:author", function(req, res){
 });
 
 app.post("/questions", function(req, res){
-  Question.create(req.body.question).then(function(addquestion){
+  Question.create(req.body).then(function(addquestion){
     res.json(addquestion);
   });
 });
