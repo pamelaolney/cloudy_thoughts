@@ -38,12 +38,12 @@ app.post("/questions", function(req, res){
 });
 
 app.put("/questions/:author", function(req, res){
-  Question.findOneAndUpdate({author: req.params.author}, req.body.question, {new: true}).then(function(updateQuestion){
+  Question.findOneAndUpdate({author: req.params.author}, req.body, {new: true}).then(function(updateQuestion){
     res.json(updateQuestion);
   });
 });
 
-app.delete("/questions/:author/delete", function(req, res){
+app.delete("/questions/:author", function(req, res){
   Question.findOneAndRemove({author: req.params.author}).then(function(deleteQuestion){
     res.json(deleteQuestion);
   });
