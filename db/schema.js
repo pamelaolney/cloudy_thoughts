@@ -1,5 +1,5 @@
-var mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/questions");
+var mongoose = require("./connection");
+var parser = require("body-parser");
 
 var db = mongoose.connection;
 
@@ -28,7 +28,4 @@ var QuestionSchema = new Schema({
 var Question = mongoose.model("Question", QuestionSchema);
 var Comment = mongoose.model("Comment", CommentSchema);
 
-module.exports = {
-  Question: Question,
-  Comment: Comment
-}
+module.exports = mongoose

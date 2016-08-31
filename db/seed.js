@@ -1,4 +1,4 @@
-var mongoose = require('./connection');
+var mongoose = require('./schema');
 var seedData = require('./seeds');
 
 var Question = mongoose.model("Question");
