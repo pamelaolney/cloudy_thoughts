@@ -14,6 +14,7 @@
       this.update = function(){
         this.question.$update({author: $stateParams.author});
       }
+      
       this.destroy = function(){
         this.question.$delete({author: $stateParams.author});
       }
